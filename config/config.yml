@@ -1,0 +1,10 @@
+paths:
+    seeds: lib/seeds
+imports:
+    seeds:
+        places: 
+            headers:
+                attributes: 
+                    manual: [name, address, zip, city, description, category, phone, url]
+                    derived: [lat, lng]	
+                relationships: [locale]

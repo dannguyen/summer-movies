@@ -3,13 +3,18 @@ namespace :import do
   desc "Read data from local files"
   task :read_seeds => :environment do
     require "#{Rails.root}/lib/tasks/foo_import.rb"
-    p = FooImport.new
+    p = FooImport.create
     p.verify_seeds
-
-    p.seed_names do |seed_name|
-      p.read_seed(seed_name).each do |seed|
-        
-      end
+    
+    
+    place_seed = p.seed_hash('places')
+    Place.destroy_all
+    p.read_seed('places').each do |entry|
+      atts = place_seed.attributes.inject({}){|hsh, att|
+        hsh[att] = entry[att]
+        hsh
+      }
+      Place.create(atts)
     end
     
   end
@@ -17,7 +22,7 @@ namespace :import do
   desc "Gets info from google docs" 
   task :fetch_seeds => :environment do
     require "#{Rails.root}/lib/tasks/foo_import.rb"
-    p = FooImport.new
+    p = FooImport.create
     p.bootstrap
     
     p.seed_names.each do |seed_name|
