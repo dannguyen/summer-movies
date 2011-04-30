@@ -7,6 +7,23 @@ gem 'rails', '3.0.4'
 
 gem 'sqlite3'
 
+gem 'rails', '3.0.4'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'net-ssh'
+gem 'andand'
+gem 'friendly_id', '3.2.1'
+gem "jammit", "~>0.6.0"
+gem 'fastercsv'
+gem 'rest-client'
+gem 'crack'
+gem 'chronic'
+gem 'rmagick'
+gem 'geokit'
+gem 'geokit-rails3'
+gem 'google-spreadsheet-ruby', :require=>'google_spreadsheet'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -6,3 +6,4 @@ public/images/assets/*
 public/assets
 .DS_Store
 config/privates.yml
+lib/seeds
