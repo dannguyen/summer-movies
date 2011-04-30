@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  zip: MyString
+  phone: MyString
+  city: MyString
+  locale_id: 1
+  description: MyText
+  lat: 1.5
+  lng: 1.5
+
+two:
+  name: MyString
+  address: MyString
+  zip: MyString
+  phone: MyString
+  city: MyString
+  locale_id: 1
+  description: MyText
+  lat: 1.5
+  lng: 1.5

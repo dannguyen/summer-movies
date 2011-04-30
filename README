@@ -4,7 +4,7 @@ Summer Movies App
 Model types:
 - Movies
 	name, string
-	synopsis, string
+	tagline, string
 	description, text
 	year, integer
 	wikipedia_url, string

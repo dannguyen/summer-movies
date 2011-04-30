@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  tagline: MyString
+  description: MyText
+  year: 1
+  wikipedia_url: MyString
+  length: 1
+  genre: MyString
+  subgenre: MyString
+  rating: 9.99
+
+two:
+  name: MyString
+  tagline: MyString
+  description: MyText
+  year: 1
+  wikipedia_url: MyString
+  length: 1
+  genre: MyString
+  subgenre: MyString
+  rating: 9.99
