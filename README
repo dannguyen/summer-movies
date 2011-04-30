@@ -1,0 +1,43 @@
+Summer Movies App
+
+
+Model types:
+- Movies
+	name, string
+	synopsis, string
+	description, text
+	year, integer
+	wikipedia_url, string
+	wikipedia_url
+	length, integer
+	
+	
+- Places
+	name, string
+	address, string
+	zip, string
+	city, string
+	
+- Locale
+	name, string
+	description, text
+	
+	
+- Events
+	start_date datetime
+	end_date datetime
+	category string
+	name string
+	description text
+	place_id integer
+	movie_id integer
+	
+	
+- Images
+	url, string
+	source_url, string
+	filename, string
+	caption, string
+	credit, string
+	entity_id, integer
+	entity_type, string
